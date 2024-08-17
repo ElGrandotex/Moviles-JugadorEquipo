@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/nombreETextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="20sp"
+                android:textColor="@color/green"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/idETextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:maxLines="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="ID" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ligaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="liga"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="1"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp">
+    <ImageView
+        android:id="@+id/ligaImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_location_pin_24"/>
+
+    <TextView
+        android:id="@+id/ciudadTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/ligaImageView"
+        android:fontFamily="@font/poppins_medium"
+        android:maxLines="1"
+        android:text="Ciudad" />
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp">
+    <ImageView
+        android:id="@+id/entrenadorImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_sports_soccer_24"/>
+
+    <TextView
+        android:id="@+id/entrenadorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/entrenadorImageView"
+        android:fontFamily="@font/poppins_medium"
+        android:maxLines="1"
+        android:text="Entrenador" />
+
+    <ImageView
+        android:id="@+id/showJugadores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_group_24"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="60dp"/>
+    <ImageView
+        android:id="@+id/updateEButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_edit_24"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"/>
+    <ImageView
+        android:id="@+id/deleteEButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_delete_24"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
