@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".UpdateEquipoActivity">
+
+    <TextView
+        android:id="@+id/editHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Editar Equipo"
+        android:textColor="@color/green"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/updateEquipoSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/editHeading"
+        android:layout_marginEnd="6dp"/>
+
+    <EditText
+        android:id="@+id/updateNameEEditText"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="Nombre"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/editHeading"
+        android:background="@drawable/green_border"
+        android:layout_marginTop="24dp"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/updateCiudadEditText"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="Ciudad"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/updateNameEEditText"
+        android:background="@drawable/green_border"
+        android:layout_marginTop="24dp"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/updateEntrenadorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="Entrenador"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/updateCiudadEditText"
+        android:background="@drawable/green_border"
+        android:layout_marginTop="24dp"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/updateLigaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="Liga"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/updateEntrenadorEditText"
+        android:background="@drawable/green_border"
+        android:layout_marginTop="24dp"
+        android:maxLines="1"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/updateLigaEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="100dp"
+        android:src="@drawable/baseline_sports_soccer_24" />
+
+</RelativeLayout>
