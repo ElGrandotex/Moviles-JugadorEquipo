@@ -13,6 +13,21 @@
         android:theme="@style/Theme.ExamenIIB"
         tools:targetApi="31">
         <activity
+            android:name=".JugadoresPorEquipoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateEquipoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateJugadorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddJugadorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddEquipoActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
